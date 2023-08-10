@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap');
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title{
+    text-align:center;
+}
+header{
+    padding:20px;
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)),url(../resources/img/header.jpg);
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    margin-bottom:40px;
+}
+a{
+    text-decoration:none;
+}
+h1, nav > a{
+    color:white;
+}
+.header-nav{
+    width:100%;
+    height:150px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap: 50px;
+    
+}
+#salon-info{
+    text-align:center;
+}
+iframe{
+    width:100%;
+    max-height:200px;
+    margin-top:50px;
+}
+
+#pets-quantity {
+    text-align: center;
+    padding: 20px 0;
+}
+
+ul#pets {
+    
+    list-style: none;
+    display: flex;
+    flex-direction:column;
+    width:100%;
+    text-align:center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+}
+
+
+.error{
+    background-color:lightpink;
+}
+
+#pets{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap:10px;
+    row-gap:10px;
+}
+
+.pet{
+    background-color:rgb(173, 230, 226);
+    border:1px solid gray;
+    border-radius:10px;
+    padding:10px;
+    transition:0.3s;
+}
+.pet:hover{
+    background: lightblue;
+    
+    transition:0.3s;
+}
+
+.pet:hover > h5 > i{
+    animation: shake 1s infinite;
+}
+.pet:hover > p:nth-child(5){
+    font-weight:bold;
+    color:purple;
+}
+.pet h5{
+    text-align:center;
+    font-weight:bold;
+}
+#numberPets{
+    font-size:12px;
+    background-color:greenyellow;
+    padding:3px;
+    border-radius:50%;
+}
+
+
+.petsTableContainer{
+    table-layout: auto;
+    width: 100%;
+}
+.petsTableContainer > tbody > tr > td >.pet{
+    margin:5px;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(8deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-8deg); }
+    100% { transform: rotate(0deg); }
+}
+@keyframes slide {
+	0% {transform:translateX(-100%);}
+	100% {transform:translateX(100%);}
+}

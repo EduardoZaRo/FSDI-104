@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fashion Pet</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" href="./resources/img/favicon.ico">
+    <script src="https://kit.fontawesome.com/337be747ec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        <h1 class="title">The Fashion Pet</h1>
+        <nav class="header-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Contact</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Register a new pet</h2>
+
+        <div>
+            <div class="mb-3">
+                <label class="form-label">Name:</label>
+                <input class="form-control" type="text" id="txtName">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Age:</label>
+                <input class="form-control" type="text" id="txtAge">
+            </div>            
+            <div class="mb-3">
+                <label class="form-label">Gender:</label>
+                <input class="form-control" type="text" id="txtGender">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Breed:</label>
+                <input class="form-control" type="text" id="txtBreed">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Services:</label>
+                <select class="form-select" id="txtService">
+                    <option value="Vaccines">Vaccines</option>
+                    <option value="Nails trimming">Nails trimming</option>
+                    <option value="Grooming">Grooming</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Type:</label>
+                <select class="form-select" id="txtType">
+                    <option value="Dog">Dog</option>
+                    <option value="Cat">Cat</option>
+                    <option value="Dragon">Dragon</option>
+                </select>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="register()">Register</button>
+        </div>
+
+        <h2>Pets list <sup id="numberPets">3</sup></h2>
+        <!-- <div id="pets-quantity"></div> -->
+        <!-- <ul id="pets"></ul> -->
+        <div id="pets">
+            <!-- pet cards -->
+        </div>
+        <h4>Bonus: use tables to display pets</h4>
+        <div id="petsTable">
+            <!-- pet cards -->
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./scripts/register.js"></script>
+    <script src="./scripts/display.js"></script>
+    <!-- <script src="scripts/practice2.js"></script> -->
+</body>
+</html>
